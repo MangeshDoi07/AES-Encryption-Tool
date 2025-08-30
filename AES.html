@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <img src="logo.png" alt="clg_logo">
+    <div class="container">
+        <div class="Encry">
+            <h1>AES Encryption</h1><br>
+            <p>Enter Plain Text to Encrypt</p>
+            <textarea placeholder="Enter Plain Text to be Encrypted" id="box"></textarea><br><br>
+            <p>Select Cipher Mode of Encryption</p>
+            <select name="" id="">
+                <option value="CBC">CBC</option>
+                <option value="ECB">ECB</option>
+                <option value="CTR">CTR</option>
+                <option value="GCM">GCM</option>
+            </select><br><br>
+            <p>Select Padding</p>
+            <select name="" id="">
+                <option value="PKCS5Padding">PKCS5Padding</option>
+                <option value="No_Padding">No_Padding</option>
+            </select><br><br>
+            <p>Key Size in Bits</p>
+            <select name="" id="">
+                <option value="64">64</option>
+                <option value="128">128</option>
+                <option value="256">256</option>
+            </select><br><br>
+            <p>Enter the secret Key</p>
+            <textarea placeholder="Enter secret Key" id="key"></textarea><br><br>
+            <div>
+                <p>Output Text Format</p>
+                <span>
+                    <input type="radio" name="opFormat" id="opFormat1">
+                    <label for="opFormat1" style="font-size: 18px; font-weight: 530;">Base64</label>
+                    <input type="radio" name="opFormat" id="opFormat2">
+                    <label for="opFormat2" style="font-size: 18px; font-weight: 530;">HexDec</label>
+                </span>
+            </div><br><br>
+            <button>Encrypt</button><br><br>
+            <p>AES Encrypted Output</p>
+            <textarea id="op" placeholder="Result will be displayed here"></textarea>
+        </div>
+
+        <div class="Decry">
+            <h1>AES Decryption</h1><br>
+            <p>Enter AES Encrypted Text</p>
+            <textarea placeholder="Enter Text to be Decrypted" id="box"></textarea><br><br>
+            <p>Select Cipher Mode of Decryption</p>
+            <select name="" id="">
+                <option value="CBC">CBC</option>
+                <option value="ECB">ECB</option>
+                <option value="CTR">CTR</option>
+                <option value="GCM">GCM</option>
+            </select><br><br>
+            <p>Select Padding</p>
+            <select name="" id="">
+                <option value="PKCS5Padding">PKCS5Padding</option>
+                <option value="No_Padding">No_Padding</option>
+            </select><br><br>
+            <p>Key Size in Bits</p>
+            <select name="" id="">
+                <option value="64">64</option>
+                <option value="128">128</option>
+                <option value="256">256</option>
+            </select><br><br>
+            <p>Enter the secret Key used for Encryption</p>
+            <textarea placeholder="Enter secret Key" id="key"></textarea><br><br>
+            <div>
+                <p>Output Text Format</p>
+                <span>
+                    <input type="radio" name="opForm" id="plain">
+                    <label for="plain" style="font-size: 18px; font-weight: 530;">Plain-Text</label>
+                    <input type="radio" name="opForm" id="base">
+                    <label for="base" style="font-size: 18px; font-weight: 530;">Base64</label>
+                </span>
+            </div><br><br>
+            <button>Decrypt</button><br><br>
+            <p>AES Decrypted Output</p>
+            <textarea id="op" placeholder="Decrypted result will be displayed here"></textarea>
+        </div>
+    </div>
+</body>
+</html>

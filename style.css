@@ -1,0 +1,213 @@
+body{
+    background-color: rgb(170,204,184, 0.6);
+    padding-left: 3.5rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#box{
+    padding: 6px 12px 6px 12px;
+    border: 2px solid black;
+    width: 322px;
+    height: 96px;
+    line-height: 1.2;
+}
+
+#box::placeholder{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#box:hover{
+    border-radius: 18px;
+}
+
+select{
+    width: 298px;
+    height: 32px;
+    border: 2px solid black;
+    padding: 6px 36px 6px 12px;
+}
+
+#key{
+    padding: 6px 12px 6px 12px;
+    border: 2px solid black;
+    width: 322px;
+    height: 32px;
+    line-height: 1.2;
+}
+
+#key::placeholder{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#key:hover{
+    border-radius: 18px;
+}
+
+p{
+    font-size: 18px;
+    font-weight: 520;
+}
+
+button{
+    width: 140px;
+    height: 50px;
+    border: 2px solid black;
+    font-size: 16px;
+    font-style: roboto;
+    font-weight: 650;
+    color: #fff;
+    background-color: #000;
+}
+
+button:hover{
+    transition: 0.2s ease 20ms;
+    cursor: pointer;
+    background-color: rgb(0,0,0,0.5);
+    box-shadow: 3px 3px 10px #000;
+}
+
+#op{
+    padding: 6px 12px 6px 12px;
+    border: 2px solid black;
+    width: 322px;
+    height: 80px;
+    line-height: 1.2;
+}
+
+#op::placeholder{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+}
+
+.container {
+    margin-top: 2rem;
+    display: flex;               
+    justify-content: space-evenly; 
+    align-items: flex-start;   
+    flex-wrap: wrap;             
+    gap: 40px;                  
+}
+
+.Encry, .Decry {
+    flex: 1;         
+    max-width: 500px;    
+}
+
+
+@media (max-width: 1200px) {
+
+  .Encry, .Decry {
+    flex: 1 1 48%;
+    max-width: 560px;
+  }
+
+  #box, #key, #op, select {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .container {
+    gap: 28px;
+    justify-content: space-between;
+  }
+
+  button {
+    width: 60%;
+    max-width: 240px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    gap: 24px;
+    justify-content: center;
+  }
+
+  .Encry, .Decry {
+    flex: 1 1 46%;
+    max-width: 520px;
+  }
+
+  p { font-size: 17px; }
+}
+
+@media (max-width: 768px) {
+
+  .container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 22px;
+  }
+
+  .Encry, .Decry {
+    width: 100%;
+    max-width: none;
+    flex: initial;
+  }
+
+
+  #box, #key, #op, select {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  #box, #op {
+    min-height: 110px; 
+    height: auto;
+  }
+
+  button {
+    width: 100%;
+    max-width: none;
+  }
+
+  body {
+    padding-left: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 22px; }
+  p { font-size: 16px; }
+
+  select {
+    height: 40px;
+  }
+
+  button {
+    height: 44px;
+    font-size: 15px;
+  }
+  #box, #key, #op, select, button {
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  body { padding-left: 0.75rem; }
+  h1 { font-size: 20px; }
+  p  { font-size: 15px; }
+}
+
+img {
+    align-items: center;
+    width: 180px;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem auto;
+    padding: 1.5rem 4rem 0.3rem 0;
+}
